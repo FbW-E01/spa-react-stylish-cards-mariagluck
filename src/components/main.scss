@@ -1,0 +1,58 @@
+body {
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+.sass_card {
+  margin: 30px;
+  width: 290px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+  .card_img {
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+
+    img {
+      width: inherit;
+      height: inherit;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  .title_card {
+    color: black;
+    height: 180px;
+    width: inherit;
+    background-color: white;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    p {
+      padding-bottom: 0;
+      margin: 0;
+    }
+  }
+
+  .sassBtn {
+    width: auto;
+    height: auto;
+    color: black;
+    background-color: white;
+    padding: 5px 20px;
+    margin: 5px 0;
+    border: black 1px solid;
+    border-radius: 5px;
+  }
+}
+
+.sass_card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
