@@ -3,56 +3,77 @@ body {
 }
 
 .sass_card {
-  margin: 30px;
   width: 290px;
-  border-radius: 10px;
+  height: 500px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
   box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
   cursor: pointer;
   transition: 0.4s;
-  .card_img {
-    width: inherit;
-    height: inherit;
-    border-radius: 10px;
-
-    img {
-      width: inherit;
-      height: inherit;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      object-fit: cover;
+    .sass_card_header {
+       background: linear-gradient(to top, #00000063, #0006),
+         url("../images/jordan-steranka-lpddCskeg4A-unsplash.jpg");
+       background-size: cover;
+       height: 250px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 0 0 56px 56px;
+       padding: 30px;
     }
-  }
 
-  .title_card {
-    color: black;
-    height: 180px;
-    width: inherit;
-    background-color: white;
-    padding: 20px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    p {
-      padding-bottom: 0;
-      margin: 0;
+    .content {
+       padding: 20px;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
     }
-  }
 
-  .sassBtn {
-    width: auto;
-    height: auto;
-    color: black;
-    background-color: white;
-    padding: 5px 20px;
-    margin: 5px 0;
-    border: black 1px solid;
-    border-radius: 5px;
-  }
+    .card_content {
+        height: 42px;
+        width: 82px;
+        box-shadow: 0px 0px 20px 0px #00000040;
+        display: grid;
+        place-content: center;
+        border-radius: 30px;
+        margin-top: -40px;
+        background: #fff;
+    }
+
+    .card_title {
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    
+    .card_description {
+        font-size: 14px;
+        margin-top: 30px;
+        color: #00000087;
+    }
+      
+    .sass_btn {
+        margin-top: 30px;
+        height: 40px;
+        background: #0053fc;
+        color: #fff;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background 0.3s;
+        :hover {
+          background: #174195e0;
+      }
+    }
+  
 }
-
-.sass_card:hover {
-  transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+@keyframes bubble {
+  to {
+    box-shadow: 0 0 0 20px #1741955c;
+  }
 }

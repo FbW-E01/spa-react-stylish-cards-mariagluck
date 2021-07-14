@@ -5,7 +5,7 @@ import pinkPeak from "../images/boris-baldinger-eUFfY6cwjSU-unsplash.jpg";
 
 function Cardboostrap() {
   return (
-    <Card style={({ width: "18rem" }, { margin: 30 })}>
+    <Card className= "mx-4" style={({ width: "18rem" }, { height: 650 })}>
       <Card.Img variant="top" src={pinkPeak} />
       <Card.Body>
         <Card.Title>Bootstrap</Card.Title>
@@ -13,7 +13,7 @@ function Cardboostrap() {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary">Bootstrap</Button>
+        <Button variant="warning">Bootstrap</Button>
       </Card.Body>
     </Card>
   );
