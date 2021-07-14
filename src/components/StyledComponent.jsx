@@ -31,18 +31,6 @@ const Title = styled.div`
   border-bottom-right-radius: 10px;
 `;
 
-// const Picture = styled.div`
-//   background-image: url(${greenPeak});
-//   width: 290px;
-//   height: 420px;
-//   background-size: cover;
-//   border-top-left-radius: 10px;
-//   border-top-right-radius: 10px;
-//   box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
-//     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
-//   cursor: pointer;
-//   transition: 0.4s;
-// `;
 
 function StyledComponent() {
     return (
